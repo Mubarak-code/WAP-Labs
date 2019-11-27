@@ -1,0 +1,42 @@
+.name {
+    color: blue;
+    font-size: xx-large;
+}
+
+.happy,
+.calm,
+.two_eye {
+    color: yellowgreen;
+}
+
+h3 {
+    color: blue;
+}
+
+body {
+    background: rgb(110, 92, 112);
+}
+
+.list {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*
+.list:hover a {
+    text-decoration-line: underline;
+}
+*/
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: darkred;
+}
+
+.list1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
