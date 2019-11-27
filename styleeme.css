@@ -40,3 +40,17 @@ a:visited {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
+
+.firstletter {
+    font-size: 35pt;
+    line-height: 10px;
+}
+
+ol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li {
+    flex: 0 0 auto;
+}
