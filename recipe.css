@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url("images/silverware.jpg");
+    background: url("assets/images/silverware.jpg");
     color: #404040;
     font-size: 11pt;
     font-family: 'Georgia', 'Garamond', 'serif';
@@ -52,7 +52,7 @@ a {
 }
 
 ul {
-    list-style-image: url("images/pie_icon.gif");
+    list-style-image: url("assets/images/pie_icon.gif");
 }
 
 .line {
