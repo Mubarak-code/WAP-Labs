@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Retrieve Grade</title>
+    <meta charset="utf-8" />
+    <link href="assets/style.css" type="text/css" rel="stylesheet">
+    <script src="assets/script.js"></script>
+</head>
+
+<body>
+    <div class="form-contaienr">
+        <form action="">
+            <fieldset>
+                <legend>Retrieve your grade:</legend>
+                <div class="input-container">
+                    <div class="input-label">
+                        <label for="name">Name:</label>
+                    </div>
+                    <input id="stdName" type="text" name="studentame">
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        <label for="text">Student ID:</label>
+                    </div>
+                    <input id="stdId" type="text" name="studentid">
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        <label for="">Select assingment:</label>
+                    </div>
+                    <select  id="stdAssignment" name="assingment">
+                        <option value="Assingment1">Assingment 1</option>
+                        <option value="Assingment2">Assingment 2</option>
+                        <option value="Assingment3">Assingment 3</option>
+                        <option value="Assingment4">Assingment 4</option>
+                        <option value="Assingment5">Assingment 5</option>
+                        <option value="Assingment6">Assingment 6</option>
+                    </select>
+                </div>
+                <div class="input-container">
+                    <div class="input-label">
+                        <label for="">Select Entry:</label>
+                    </div>
+                    <label> <input type="radio" name="entry" id="Nov2018" value="Nov2018" checked> Nov 2018 </label>
+                    <label> <input type="radio" name="entry" id="Feb2019" value="Feb2019"> Feb 2019 </label>
+                    <label> <input type="radio" name="entry" id="April2019" value="April2019"> April 2019 </label>
+                </div>
+
+
+
+                 <div class="input-container">
+                    <div class="input-label">
+                        <label for="">Confirm  </label>
+                    </div>
+                    <label style="position: relative; top: 5px;"> <input type="checkbox" id="stdConfirm" name="confirm" value="true"> I confirm </label>
+                    <p class="warning-message">* By check this box you confirm that you are not lying and really are only looking up your own grade</p>
+                   
+                </div>
+
+            </fieldset>
+            <button type="submit" onclick="return getElementId()" class="button">Get Grade</button>
+        </form>
+    </div>
+</body>
+
+</html>
