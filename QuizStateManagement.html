@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title> Servlet Quiz</title>
+    <style>
+        .answer {
+            color: black;
+        }
+
+        .question{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h2> Answers for Servlet Quiz</h2>
+<ol>
+    <li><p class="question">Can post requests be bookmarked? What are the problems?</p>
+        <p class="answer">An HTTP POST can be bookmarked, but since a bookmark only consists of the URL, all of the form
+            parameters will be lost. This will often mean that the web server doesn't know what to do with the
+            request, since it was expecting some form parameters. A POST cannot be bookmarked </p>
+    </li>
+
+    <li><p class="question">Can post requests be bookmarked? What are the problems?</p>
+        <p class="answer"> It is Java class that allows for 'including' content in a request/response or 'forwarding' a
+            request/response to a resource</p>
+    </li>
+    <li><p class="question">What is the purpose of request dispatching?</p>
+        <p class="answer"> <strong>sendRedirect</strong>
+            This method is used to redirect client request to some other location for further processing ,the
+            new location is available on different server or different context.our web container handle this
+            and transfer the request using browser ,and this request is visible in browser as a new request.
+            Some time this is also called as client side redirect.
+        <strong>forward</strong>
+            This method is used to pass the request to another resource for further processing within the
+            same server, another resource could be any servlet, jsp page any kind of file.This process is taken
+            care by web container when we call forward method request is sent to another resource without
+            the client being informed, which resource will handle the request it has been mention on
+            requestDispatcher object which we can get by two ways either using ServletContext or Request.
+            This is also called server side redirect.</p>
+    </li>
+    <li><p class="question">What is the difference between redirect and request dispatch?
+    </p>
+        <p class="answer"> An attribute is an object that is used to share information in a web app. Attribute allows Servlets
+            to share information among themselves. Attributes can be SET and GET from one of the
+            following scopes :
+            1. request
+            2. session
+            3. application</p>
+    </li>
+    <li><p class="question">What is an attribute ?</p>
+        <p class="answer">It is Java class that allows for 'including' content in a request/response or 'forwarding' a
+            request/response to a resource </p>
+    </li>
+    <li><p class="question">What is the difference between attributes and parameters?</p>
+        <p class="answer">Request parameters are the result of submitting an HTTP request with a query string that specifies the
+            name/value pairs, or of submitting an HTML form that specifies the name/value pairs. The name and the
+            values are always strings.
+            Request attributes (more correctly called "request-scoped variables") are objects of any type that are
+            explicitly placed on the request object via a call to the setAttribute() method. They are retrieved in Java
+            code via the getAttribute() method and in JSP pages with Expression Language references. </p>
+    </li>
+    <li><p class="question">What are dangers of using attributes?</p>
+            because both systems maintain information about the session itself during its life</p>
+            <p class="answer">Parameters are read only while attributes are read/write objects. These may pose a problem as they
+                may be overwritten. </p>
+    </li>
+    <li><p class="question">What does it mean to say that http is stateless? Give an example of a stateful protocol.</p>
+        <p class="answer"> Stateless means there is no record of previous interactions and each interaction request has to be
+            handled based entirely on information that comes with it. Every web request is new to the server even if
+            coming from the same browser. which means that the connection between the browser and the server
+            is lost once the transaction ends. In contrast, a protocol that requires keeping of the internal state on
+            the server is known as a stateful protocol. A TCP connection-oriented session is a 'stateful' connection
+            because both systems maintain information about the session itself during its life</p>
+    </li>
+    <li><p class="question">Give 5 different methods for maintaining state information (count each attribute scope as one
+        method).
+        </p>
+        <p class="answer"> 1. request scope: destroyed when servletfinishes processing request
+            2. session scope: destroyed when user closes browser
+            3.application scope destroyed when Container stopped.
+            4.Cookies saved on browser, temporary (deleted when the browser closes) and permanent
+            5.Hidden fields on a form</p>
+    </li>
+    <li><p class="question">How long does a session last?</p>
+        <p class="answer"> How long does a session last? By default, a session lasts until there's 30 minutes of inactivity, but you
+            can adjust this limit so a session lasts from a few seconds to several hours.</p>
+    </li>
+    <li><p class="question">What is a cookie, and how long does a cookie last?</p>
+        <p class="answer"> Cookies are small data files that are placed on computer or mobile device when visiting a website.
+            Cookies can remain on a computer or mobile device for different periods of time. Some cookies are
+            ‘session cookies’, which means they only exist when a browser is open and are automatically deleted
+            when browser is closed or quit the app. Other cookies are ‘persistent cookies’, meaning they survive
+            after a browser or app is closed and can be used by websites or apps to recognize a computer when you
+            re-opening browser or app later.</p>
+    </li>
+    <li><p class="question">What is the purpose of URL rewriting?
+    </p>
+        <p class="answer"> Url rewriting is a process of appending or modifying any url structure while loading a page.
+            If your browser does not support cookies, URL rewriting provides you with another session tracking
+            alternative. URL rewriting is a method in which the requested URL is modified to include a session ID.</p>
+    </li>
+    <li><p class="question">Why does the request attribute report ‘null’ for the maintaining state demo?
+    </p>
+        <p class="answer"> May be session timeout</p>
+    </li>
+</ol>
+
+
+
+
+
+
+
+</body>
+</html>
