@@ -1,0 +1,13 @@
+* {
+    margin: auto;
+    max-width: 500px;
+}
+
+#btn1 {
+    margin-bottom: 10px;
+}
+
+#ans {
+    height: 50px;
+    font-size: x-large;
+}
