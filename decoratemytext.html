@@ -4,23 +4,43 @@
 <head>
     <title>Text Decorator</title>
     <link href="decoratemytext.css" type="text/css" rel="stylesheet" />
+    <script src="decoratemytext.js" type="text/javascript"></script>
 
 
     <!-- link to your script file here -->
 
 </head>
 
-<body>
+<body id="lay">
     <h1>Text Decorator</h1>
 
     <div>
-        <img src="decorated.gif" alt="very decorated!" />
+        <img src="assets/images/decorated.jpg" width="400" height="400" alt="very decorated!" />
     </div>
 
     <!-- Your UI controls go here -->
 
-    <textarea name="" id="" cols="30" rows="4"></textarea>
+    <fieldset id="field">
+        <legend> <strong>Text</strong> </legend>
+        <textarea name="" id="text1" cols="30" rows="4"></textarea>
+    </fieldset>
+    <br>
+    <fieldset id="field1">
+        <legend> <strong>Decoration</strong> </legend>
+        <button id="btn1" onclick="timer()"> <strong>Bigger decoration!</strong> </button> <br>
+        <input id="check1" type="checkbox" onchange="ftn2()"> Bling </input> <br>
+
+        <label for="">I stopped it after 3 iterations.</label>
+        <!-- <textarea name="" id="" cols="30" rows="4"></textarea> -->
+    </fieldset>
+    <br>
+    <fieldset id="field2">
+        <legend>Extra</legend>
+        <button id="igpay" onclick="ftn3()"> Igpay Atinlay </button>
+        <button id="mal" onclick="ftn4()"> Malkovitch </button>
+    </fieldset>
+
 
 </body>
 
-</html>
+</html
