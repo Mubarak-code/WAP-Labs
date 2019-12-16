@@ -1,0 +1,12 @@
+#lbl1 {
+    margin-top: 25px;
+}
+
+#btn1 {
+    margin-bottom: 20px;
+}
+
+#field,
+#field2 {
+    border: 3px solid black;
+}
